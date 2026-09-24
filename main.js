@@ -61,15 +61,7 @@ async function main() {
     }
   } catch (error) {
     throw error
-  } finally {
-    close_api(api)
-  }
-
-  if (api.killed) {
-    // 强制关闭进程
-    // 必须强制关闭，不然action不会停止
-    process.exit(0)
-  }
+  } 
 }
 
 main()

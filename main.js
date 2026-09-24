@@ -27,6 +27,7 @@ async function main() {
     let res = await send("/login/token", "GET", headers)
     if (res.status == 1) {
       console.log("token刷新成功")
+      await delay(60 * 1000)  // 等 60 秒再签到
     } else {
       console.log("响应内容")
       console.dir(res, { depth: null })

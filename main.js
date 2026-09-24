@@ -8,8 +8,9 @@ async function main() {
     throw new Error("参数错误！请检查")
   }
   // 启动服务
-  let api = startService()
-  await delay(2000)
+  // let api = startService()
+  // await delay(2000)
+  // 直接使用 Vercel API，不再启动本地服务
 
   let today = new Date();
   // 服务器时间比国内慢8小时，获取第二天时间

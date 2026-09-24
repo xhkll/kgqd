@@ -33,7 +33,7 @@ function close_api(api) {
 
 // 发送请求
 async function send(path, method, headers) {
-  const result = await fetch("http://localhost:3000" + path, {
+  const result = await fetch("https://ku-gou-music-api-omega-five.vercel.app" + path, {
     method: method,
     headers: headers
   }).then(r => r.json())
